@@ -3,8 +3,8 @@
 Intended to be a container build for the [National Research Platform (NRP)](https://nrp.ai/documentation/) with some basic tools installed for:
  - s3 access
  - CUDA compatible with NRP GPUs (CUDA version 12.4.1 currently)
- - Ubuntu (22.04) + some basic apt packages
- - Python (v3.12) + some basic pip packages
+ - Ubuntu (22.04) + some useful apt packages
+ - Python (v3.12) + some useful pip packages
  - a Maxwell plugin allowing the python neo package to open compressed Maxwell files
 
 ### Using the container on the NRP
