@@ -24,7 +24,7 @@ spec:
                 - NVIDIA-L40
       containers:
         - name: nrp-base-image
-          image: quay.io/ucsc_cgl/kilosort4:12.4.1cudnn-runtime-ubuntu22.04
+          image: quay.io/ucsc_cgl/nrp:12.4.1cudnn-runtime-ubuntu22.04
           imagePullPolicy: Always
           command: ["sh", "-c"]
           args:
