@@ -29,7 +29,7 @@ spec:
           command: ["sh", "-c"]
           args:
             - >
-              nvidia-smi && python3 --version && aws --endpoint-url https://s3.braingeneers.gi.ucsc.edu s3 ls s3://braingeneersdev/  && python3 /tmp/run.py s3://braingeneers/ephys/2025-02-06-e-JLS-adhered-pharma/original/data/Trace_20250206_13_34_45_ch25836_DMSOctl.raw.h5
+              nvidia-smi && python3 --version && aws --endpoint-url https://s3.braingeneers.gi.ucsc.edu s3 ls s3://braingeneersdev/
           volumeMounts:
             - name: prp-s3-credentials
               mountPath: "/root/.aws/credentials"
