@@ -10,7 +10,7 @@ RUN pip install awscli
 RUN pip install matplotlib torch spikeinterface boto3 kilosort h5py neo pandas numpy
 
 # this is the hdf5 plugin to decompress and read Maxwell data
-RUN mkdir -p /usr/local/hdf5/lib/plugin/
-COPY libcompression.so /usr/local/hdf5/lib/plugin/libcompression.so
+RUN mkdir -p ${HDF5_PLUGIN_PATH}
+COPY libcompression.so ${HDF5_PLUGIN_PATH}
 
 RUN pip install boto3==1.35.95
